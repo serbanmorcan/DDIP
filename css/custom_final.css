@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/
+	css?family=Lato:400,700,900|Libre+Baskerville:400,700|Open+Sans:400,300,700);
+
+
+/* Styles for logo and tagline*/
+.logo {
+	margin-top: 10px;
+	text-align: center;
+}
+.tagline {
+	color: #003971;
+	font-family: Baskerville, serif;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 1em;
+}
+
+
+/*Styles for navigation bar*/
+.navbar-default {
+	background-color: #003971;
+	border: none;
+	}
+.navbar {
+	border: none;
+	border-radius: 0;
+	/*border-top: 5px solid #bb3a3a;*/
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+ 	color: #bb3a3a;
+}
+.navbar-default .navbar-nav>li>a:focus {
+	color: white;
+}
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: white;
+	background-color: #bb3a3a;
+}
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+color: black;
+background-color: white;
+}
+
+
+/*nav bar dropdown menu*/
+.dropdown-menu {
+	border-top: solid 5px #bb3a3a;
+	min-width: 190;
+	}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: white;
+	background-color: #3881C0;
+}
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: white;
+}
+}
+
+
+/**  Navbar Toggle **/
+.navbar-toggle {
+  background-color: #bb3a3a;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+background-color: #bb3a3a;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+
+/*Images Styling*/
+
+@media(min-width: 768px) {
+
+#grup {
+	padding-right: 30px;
+}
+}
+
+#team {
+	padding-left: 20px;
+}
+@media(max-width: 992px) {
+	#team {
+	padding-left: 0px;
+	padding-bottom: 20px;
+}
+}
+
+#sediu {
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+/*Header styling*/
+ .homePage h1 {
+font-family: "garamond_premier_promedium";
+font-size: 30px;
+color: #112f5d;
+line-height: 30px;
+border-bottom: 5px solid #bb3a3a;
+float: left;
+font-variant: small-caps;
+
+}
+
+/* Button styling*/
+.btn-primary {
+	background-color: #003971;
+	border-color: #003971;
+	margin: 20px 0px;
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, 
+.btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+	color: #fff;
+	background-color: #bb3a3a;
+	border-color: #bb3a3a;
+}
+
+
+/*Homepage panel styling*/
+
+.panel-primary .panel-heading {
+
+	background-color: #003971;
+	border-color: #003971;
+}
+.panel {
+	border-color: #003971;
+}
+
+
+/* footer styling for all resolutions */
+
+.siteinfo {
+	text-align: center;
+	padding: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	font-size: 0.8em;
+}
+
+
+/*Contact styling*/
+
+#contact {
+	width: 100%;
+}
+.pagecontent {	
+	border: 1px solid #C6D5DD;
+	float: left;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.pagecontent h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.introducere {
+	font-size: 15px;
+	color: #383838;
+}
+
+.border {
+	margin-top: 10px;
+	border-bottom: 1px solid #dbdbdc;
+}
+
+.contactData {
+	padding-top: 10px;
+	margin-top: 20px;
+}
+.contactData h3 {
+	color: #000000;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	text-transform: uppercase;
+}
+
+.contactData p {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	color: #000000;
+}
+
+
+
+@media (max-width: 992px) {
+	#sediu{
+		padding-bottom: 15px;
+	}
+	.contactData {
+		padding-left: 15px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) 
+
+Greater than 768 px, push logo left and tagline right. Alter 
+tagline font size, alignment, and padding for larger dimensions.
+
+*/
+
+@media (min-width: 768px) {  
+	.logo {
+		text-align: left;
+	}
+	.tagline {
+		font-size: 1.8em;
+		text-align: right;
+		padding-top: 1.6em;
+	}
+	
+}
+@media (min-width: 1200px){
+form {
+		width: 1100px;
+		margin: 20px auto;
+	}
+}
+
+@media (max-width: 758px){
+form {
+		width: 100%;
+		margin: 20px auto;
+	}
+}
